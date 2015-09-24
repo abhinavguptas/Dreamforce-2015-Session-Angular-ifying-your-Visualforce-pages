@@ -1,0 +1,49 @@
+<apex:page showChat="false" showHeader="false" sidebar="false" 
+       standardStylesheets="false" docType="html-5.0" applyBodyTag="false" applyHtmlTag="false">
+     
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <base href="/"/>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+        <!-- compiled css output -->
+      <link href="{!URLFOR($Resource.ioniclib, 'css/ionic.min.css')}" rel="stylesheet"/>
+      <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+      <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" />
+      <c:RemoteTK />
+        <!-- ionic/angularjs js -->
+        <script src="{!URLFOR($Resource.ioniclib, 'js/ionic.bundle.min.js')}"></script>
+    <script>
+        var VFPageData = {
+            resources : {
+                mavens_app_base : '{!$Resource.tabs_app_mavens}/'
+            },  
+            user : {
+                id : '{!$User.Id}'
+            }
+        };
+    </script> 
+
+      <!-- your app's js -->
+    <script src="{!URLFOR($Resource.tabs_app_mavens, '/js/app.js')}"></script>
+    <script src="{!URLFOR($Resource.tabs_app_mavens, '/js/controllers.js')}"></script>      
+    <script src="{!URLFOR($Resource.tabs_app_mavens, '/js/services.js')}"></script>      
+  </head>
+  <body ng-app="starter">
+
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>    
+</apex:page>

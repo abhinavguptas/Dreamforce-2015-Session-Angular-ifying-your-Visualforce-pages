@@ -1,0 +1,40 @@
+<apex:page showChat="false" showHeader="false" sidebar="false" 
+       standardStylesheets="false" docType="html-5.0" applyBodyTag="false" applyHtmlTag="false">
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+          <base href="/"/>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+      <!-- compiled css output -->
+      <link href="{!URLFOR($Resource.ionic_old_lib, 'css/ionic.min.css')}" rel="stylesheet"/>
+      <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+      <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" />
+      <c:RemoteTK />
+      <!-- ionic/angularjs js -->
+      <script src="{!URLFOR($Resource.ionic_old_lib, 'js/ionic.bundle.js')}"></script>
+    
+    <script src="{!$Resource.myapp_app_js}"></script> 
+   <script src="{!$Resource.myapp_controllers_js}"></script> 
+   <script src="{!$Resource.myapp_services_js}"></script>
+
+  </head>
+   <body ng-app="starter">
+
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
+
+</apex:page>

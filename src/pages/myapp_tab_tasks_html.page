@@ -1,0 +1,21 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false"  
+	applyBodyTag="false" applyHtmlTag="false">
+
+<ion-view view-title="Tasks">
+    
+    <ion-content>        
+        <!-- The list directive is great, but be sure to also checkout the collection repeat directive when scrolling through large lists -->
+        <ion-list can-swipe="true" show-delete="showBulkComplete">
+            <ion-item ng-repeat="task in tasks" item="task" class="item-remove-animate" href="/{{task.Id}}">
+                {{ task.Subject }}
+                <p>
+                  {{task.ActivityDate | date:'longDate'}}
+                </p>
+                
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+
+</apex:page>
