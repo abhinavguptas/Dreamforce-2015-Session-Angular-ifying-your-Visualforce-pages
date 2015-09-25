@@ -7,6 +7,7 @@ Please find it in [this google presentation](https://docs.google.com/presentatio
 *Note: I am not giving slideshare link as it messes up the gif animations added for better understanding.*
 
 ## Code Structure ##
+Following is directory structure of code files, along with comments next to file and dir names.
 
     ├── **resource-bundles** *(kept exploded files in git, for ease in exploring code without requiring to clone or download the git repo)*
     │   ├── tabs_app_aside.resource _(exploded zipped static resource generated from aside)_
