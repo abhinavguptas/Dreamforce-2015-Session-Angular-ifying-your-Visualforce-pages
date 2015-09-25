@@ -2,6 +2,8 @@
 Code Snippets from Dreamforce 2015 Session : Angular-ifying your Visualforce pages
 ## Session ##
 
+A practical guide to being productive when using Angluar.js apps with Visualforce pages. We will demonstrate best practices for structuring Single Page Apps inside your Visualforce pages for static resources, mavensmate resource bundles and resource editing with Aside.io & the Welkin suite. By the end of the session you will understand the best way to use Angular.js for your projects.
+
 [Link](https://success.salesforce.com/Ev_Sessions?eventId=a1Q30000000DHQlEAO#/session/a2q300000019BHHAA2) to Dreamforce Session listing. 
 
 
