@@ -1,5 +1,9 @@
 # Dreamforce 2015 Session : "Angular-ifying your Visualforce pages"
 Code Snippets from Dreamforce 2015 Session : Angular-ifying your Visualforce pages
+## Session ##
+
+[Link](https://success.salesforce.com/Ev_Sessions?eventId=a1Q30000000DHQlEAO#/session/a2q300000019BHHAA2) to Dreamforce Session listing. 
+
 
 ## Slides ##
 Please find it in [this google presentation](https://docs.google.com/presentation/d/1BxclC0veJRXEmhP-aD_OlK08hNkgx9e52K65icFOXJU/edit?usp=sharing). 
